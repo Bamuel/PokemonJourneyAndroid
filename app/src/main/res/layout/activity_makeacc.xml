@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.bamuel.pokemonjourney.Battle">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" app:srcCompat="@drawable/bg_afternoon"
+                android:id="@+id/Backgroundimage" android:scaleType="fitXY"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" app:srcCompat="@drawable/bg_afternoon"
+                android:id="@+id/Backgroundimage2" android:scaleType="fitXY"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/a1"
+                android:id="@+id/Potagonistloadup" android:scaleType="fitXY"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginBottom="60dp"
+                android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Username"
+            android:id="@+id/txtviewUsername"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Gender"
+            android:id="@+id/TextviewGender"
+            android:layout_below="@+id/editText_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_name"
+            android:layout_alignTop="@+id/txtviewUsername"
+            android:layout_toRightOf="@+id/txtviewUsername"
+            android:layout_toEndOf="@+id/txtviewUsername"/>
+    <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back" android:layout_below="@+id/TextviewGender"
+            android:layout_toRightOf="@+id/TextviewGender" android:layout_toEndOf="@+id/TextviewGender"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_name" android:layout_toRightOf="@+id/TextviewGender"
+            android:layout_toEndOf="@+id/TextviewGender" android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:orientation='horizontal'
+            android:id="@+id/RadioGroup">
+        <RadioButton
+                android:text="Boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobuttonMale"
+                android:layout_weight="1" android:checked="true"/>
+        <RadioButton
+                android:text="Girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton2" android:layout_weight="1"/>
+    </RadioGroup>
+
+</RelativeLayout>

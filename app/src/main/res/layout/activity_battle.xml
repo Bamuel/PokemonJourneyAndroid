@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.bamuel.pokemonjourney.Battle"
+        >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/citybattle"
+                android:id="@+id/Background"
+                android:scaleType="fitXY"
+                />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/pkmn6"
+                    android:id="@+id/oppoentpokemon"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginEnd="150dp"
+                    android:layout_marginTop="25pt"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="14dp"
+                    />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/backpikachu"
+                    android:id="@+id/PokemonYours"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginStart="70dp"
+                    />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <Button
+                android:text="Run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/run"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        <Button
+                android:text="Bait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bait"
+                android:layout_above="@+id/run"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        <Button
+                android:text="fight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/run"
+                android:layout_toLeftOf="@+id/bait"
+                android:id="@+id/fight"
+                android:layout_alignLeft="@+id/pokeball"
+                android:layout_alignStart="@+id/pokeball"
+                />
+
+        <Button
+                android:text="Pokeball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fight"
+                android:layout_toLeftOf="@+id/bait"
+                android:layout_toStartOf="@+id/bait"
+                android:id="@+id/pokeball"
+                />
+    </RelativeLayout>
+
+</RelativeLayout>
