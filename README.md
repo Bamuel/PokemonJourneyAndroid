@@ -1,6 +1,6 @@
 Pokemon Journey ANDROID
 ========
-`by Samuel Levin and Sushant Adhikari`
+`by Samuel Levin`
 
 Pokemon Journey is a simple game which has been created over personal interest and school assignment
 
